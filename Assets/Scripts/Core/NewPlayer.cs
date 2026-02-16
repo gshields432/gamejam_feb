@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class NewPlayer : PhysicsObject
 {
-    [Header ("Reference")]
+    [Header("Reference")]
     public AudioSource audioSource;
     [SerializeField] private Animator animator;
     private AnimatorFunctions animatorFunctions;
@@ -42,7 +42,7 @@ public class NewPlayer : PhysicsObject
     private float fallForgivenessCounter; //Counts how long the player has fallen off a ledge
     [SerializeField] private float fallForgiveness = .2f; //How long the player can fall from a ledge and still jump
     [System.NonSerialized] public string groundType = "grass";
-    [System.NonSerialized] public RaycastHit2D ground; 
+    [System.NonSerialized] public RaycastHit2D ground;
     [SerializeField] Vector2 hurtLaunchPower; //How much force should be applied to the player when getting hurt?
     private float launch; //The float added to x and y moveSpeed. This is set with hurtLaunchPower, and is always brought back to zero
     [SerializeField] private float launchRecovery; //How slow should recovering from the launch be? (Higher the number, the longer the launch will last)
@@ -54,14 +54,14 @@ public class NewPlayer : PhysicsObject
     [System.NonSerialized] public bool pounding;
     [System.NonSerialized] public bool shooting = false;
 
-    [Header ("Inventory")]
+    [Header("Inventory")]
     public float ammo;
     public int coins;
     public int health;
     public int maxHealth;
     public int maxAmmo;
 
-    [Header ("Sounds")]
+    [Header("Sounds")]
     public AudioClip deathSound;
     public AudioClip equipSound;
     public AudioClip grassSound;
@@ -85,7 +85,7 @@ public class NewPlayer : PhysicsObject
         animatorFunctions = GetComponent<AnimatorFunctions>();
         origLocalScale = transform.localScale;
         recoveryCounter = GetComponent<RecoveryCounter>();
-        
+
         //Find all sprites so we can hide them when the player dies.
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
 
@@ -125,11 +125,11 @@ public class NewPlayer : PhysicsObject
             //Flip the graphic's localScale
             if (move.x > 0.01f)
             {
-               graphic.transform.localScale = new Vector3(origLocalScale.x, transform.localScale.y, transform.localScale.z);
+                graphic.transform.localScale = new Vector3(origLocalScale.x, transform.localScale.y, transform.localScale.z);
             }
             else if (move.x < -0.01f)
             {
-               graphic.transform.localScale = new Vector3(-origLocalScale.x, transform.localScale.y, transform.localScale.z);
+                graphic.transform.localScale = new Vector3(-origLocalScale.x, transform.localScale.y, transform.localScale.z);
             }
 
             //Punch
@@ -189,6 +189,32 @@ public class NewPlayer : PhysicsObject
             //If the player is set to frozen, his launch should be zeroed out!
             launch = 0;
         }
+    }
+    public void Blink()
+    {
+        //TODO: play blink anim (or should the open/close animations be unique?
+        //if so move this just above the close/open eyes() )
+        Input.GetButtonDown
+        // if the state is CURRENTLY Neutral, swap to Bad   
+        if(GameManager.Instance.GameState == GameManager.GameStates.Neutral)
+        {
+            CloseEyes();
+        }
+        else
+        {
+            OpenEyes();
+        }
+    }
+    public void OpenEyes() {
+        
+        // set the GameState to Neutral
+        GameManager.Instance.GameState = GameManager.GameStates.Neutral;
+
+    }
+    public void CloseEyes() {
+
+        // set the GameState to Bad
+        GameManager.Instance.GameState = GameManager.GameStates.Bad;
     }
 
     public void SetGroundType()
