@@ -194,7 +194,7 @@ public class NewPlayer : PhysicsObject
     {
         //TODO: play blink anim (or should the open/close animations be unique?
         //if so move this just above the close/open eyes() )
-        Input.GetButtonDown
+        //Input.GetButtonDown;
         // if the state is CURRENTLY Neutral, swap to Bad   
         if(GameManager.Instance.GameState == GameManager.GameStates.Neutral)
         {
