@@ -231,7 +231,7 @@ public class NewPlayer : PhysicsObject
     private void SyncVisionEffectToEyeState()
     {
         bool eyesClosed = GameManager.Instance != null && GameManager.Instance.GameState == GameManager.GameStates.Bad;
-        DarknessVisionEffect.SetActiveForAll(eyesClosed);
+        DarknessVisionEffect.SetGlobalActive(eyesClosed);
     }
 
     public void SetGroundType()

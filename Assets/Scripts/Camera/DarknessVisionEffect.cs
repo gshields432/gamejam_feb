@@ -5,8 +5,7 @@ using UnityEngine;
 public class DarknessVisionEffect : MonoBehaviour
 {
     private const int MaxEmitterCount = 64;
-    private static readonly System.Collections.Generic.List<DarknessVisionEffect> ActiveEffects =
-        new System.Collections.Generic.List<DarknessVisionEffect>();
+    public static DarknessVisionEffect Instance { get; private set; }
 
     [Header("Darkness")]
     [Range(0f, 1f)] public float darkness = 1f;
@@ -31,18 +30,22 @@ public class DarknessVisionEffect : MonoBehaviour
 
     private void OnEnable()
     {
+        if (Instance != null && Instance != this)
+        {
+            Debug.LogWarning("Multiple DarknessVisionEffect instances detected. The latest enabled instance will be used.");
+        }
+
+        Instance = this;
         targetCamera = GetComponent<Camera>();
         EnsureMaterial();
-
-        if (!ActiveEffects.Contains(this))
-        {
-            ActiveEffects.Add(this);
-        }
     }
 
     private void OnDisable()
     {
-        ActiveEffects.Remove(this);
+        if (Instance == this)
+        {
+            Instance = null;
+        }
 
         if (darknessMaterial != null)
         {
@@ -59,14 +62,16 @@ public class DarknessVisionEffect : MonoBehaviour
         }
     }
 
-    public static void SetActiveForAll(bool isActive)
+    public void SetEffectEnabled(bool isActive)
     {
-        for (int i = 0; i < ActiveEffects.Count; i++)
+        effectEnabled = isActive;
+    }
+
+    public static void SetGlobalActive(bool isActive)
+    {
+        if (Instance != null)
         {
-            if (ActiveEffects[i] != null)
-            {
-                ActiveEffects[i].effectEnabled = isActive;
-            }
+            Instance.SetEffectEnabled(isActive);
         }
     }
 
