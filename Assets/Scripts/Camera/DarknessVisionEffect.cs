@@ -5,11 +5,14 @@ using UnityEngine;
 public class DarknessVisionEffect : MonoBehaviour
 {
     private const int MaxEmitterCount = 64;
+    private static readonly System.Collections.Generic.List<DarknessVisionEffect> ActiveEffects =
+        new System.Collections.Generic.List<DarknessVisionEffect>();
 
     [Header("Darkness")]
     [Range(0f, 1f)] public float darkness = 1f;
     [Range(0f, 1f)] public float ambientVisibility = 0f;
     [Range(0.01f, 2f)] public float edgeSoftness = 0.35f;
+    [SerializeField] private bool effectEnabled = true;
 
     [Header("Shader")]
     [SerializeField] private Shader darknessShader;
@@ -30,10 +33,17 @@ public class DarknessVisionEffect : MonoBehaviour
     {
         targetCamera = GetComponent<Camera>();
         EnsureMaterial();
+
+        if (!ActiveEffects.Contains(this))
+        {
+            ActiveEffects.Add(this);
+        }
     }
 
     private void OnDisable()
     {
+        ActiveEffects.Remove(this);
+
         if (darknessMaterial != null)
         {
             if (Application.isPlaying)
@@ -46,6 +56,17 @@ public class DarknessVisionEffect : MonoBehaviour
             }
 
             darknessMaterial = null;
+        }
+    }
+
+    public static void SetActiveForAll(bool isActive)
+    {
+        for (int i = 0; i < ActiveEffects.Count; i++)
+        {
+            if (ActiveEffects[i] != null)
+            {
+                ActiveEffects[i].effectEnabled = isActive;
+            }
         }
     }
 
@@ -80,6 +101,12 @@ public class DarknessVisionEffect : MonoBehaviour
         if (targetCamera == null)
         {
             targetCamera = GetComponent<Camera>();
+        }
+
+        if (!effectEnabled)
+        {
+            Graphics.Blit(source, destination);
+            return;
         }
 
         EnsureMaterial();
