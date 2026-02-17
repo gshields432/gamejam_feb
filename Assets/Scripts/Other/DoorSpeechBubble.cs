@@ -35,7 +35,7 @@ public class Door : MonoBehaviour
         hoverTween.Pause();
     }
 
-/*     void Update()
+    void Update()
     {
         // TEST press space to toggle speech bubble 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -47,7 +47,7 @@ public class Door : MonoBehaviour
 
             isVisible = !isVisible;
         }
-    } */
+    } 
 
     void SetupHover() //Creates the looping hover animation
     {
