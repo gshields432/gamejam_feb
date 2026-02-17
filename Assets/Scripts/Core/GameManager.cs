@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] public AudioTrigger gameAmbience;
     public enum GameStates // the states that are changed when the player opens/closes their eyes
     {
-        Neutral,
-        Bad
+        Neutral, //eyes closed
+        Bad      //eyes open
     }
     public GameStates GameState = GameStates.Neutral; //start in the neutral state
     

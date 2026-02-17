@@ -40,7 +40,7 @@ public class EnemyBase : MonoBehaviour
     public void GetHurt(int launchDirection, int hitPower)
     {
         //Hit the enemy, causing a damage effect, and decreasing health. Allows for requiring a downward pound attack
-        if ((GetComponent<Walker>() != null || GetComponent<Flyer>() != null) && !recoveryCounter.recovering)
+        if ((GetComponent<Walker>() != null || GetComponent<Flyer>() != null) && !recoveryCounter.recovering ) 
         {
             if (!requirePoundAttack || (requirePoundAttack && NewPlayer.Instance.pounding))
             {

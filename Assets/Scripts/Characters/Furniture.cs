@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Walker : PhysicsObject
+public class Furniture : PhysicsObject
 {
     [Header ("Reference")]
     public EnemyBase enemyBase;
@@ -77,6 +77,11 @@ public class Walker : PhysicsObject
 
         if (!NewPlayer.Instance.frozen)
         {
+            if (GameManager.Instance.GameState.Equals(GameManager.GameStates.Neutral))
+            {
+                //don't move if player has eyes open
+                direction = 0;
+            }
             distanceFromPlayer = new Vector2 (NewPlayer.Instance.gameObject.transform.position.x - transform.position.x, NewPlayer.Instance.gameObject.transform.position.y - transform.position.y);
             directionSmooth += ((direction * sitStillMultiplier) - directionSmooth) * Time.deltaTime * changeDirectionEase;
             move.x = (1 * directionSmooth) + launch;
@@ -128,8 +133,9 @@ public class Walker : PhysicsObject
                     }
                     else
                     {
-                        if (sitStillWhenNotFollowing)
+                        if (sitStillWhenNotFollowing) 
                         {
+                            // Furniture should sit still when the gamestate is neutral
                             sitStillMultiplier = 0;
                         }
                         else
@@ -168,7 +174,11 @@ public class Walker : PhysicsObject
                     }
                     else if (direction == 1)
                     {
-                        Jump();
+                        if(Mathf.Abs( distanceFromPlayer.x) < 2 
+                            && GameManager.Instance.GameState.Equals(GameManager.GameStates.Bad)) // only jump in close range of the player
+                        {
+                            Jump();
+                        }
                     }
 
                 }
@@ -184,7 +194,11 @@ public class Walker : PhysicsObject
                     }
                     else if (direction == -1)
                     {
-                        Jump();
+                        if (Mathf.Abs(distanceFromPlayer.x) < 2
+                            && GameManager.Instance.GameState.Equals(GameManager.GameStates.Bad)) // only jump in close range of the player
+                        {
+                            Jump();
+                        }
                     }
                 }
 
