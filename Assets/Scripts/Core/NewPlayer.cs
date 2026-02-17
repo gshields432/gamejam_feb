@@ -91,6 +91,7 @@ public class NewPlayer : PhysicsObject
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
 
         SetGroundType();
+        SyncVisionEffectToEyeState();
     }
 
     private void Update()
@@ -217,12 +218,20 @@ public class NewPlayer : PhysicsObject
         Debug.Log("Opened Eyes");
         // set the GameState to Neutral
         GameManager.Instance.GameState = GameManager.GameStates.Neutral;
+        SyncVisionEffectToEyeState();
 
     }
     public void CloseEyes() {
         Debug.Log("Closed Eyes");
         // set the GameState to Bad
         GameManager.Instance.GameState = GameManager.GameStates.Bad;
+        SyncVisionEffectToEyeState();
+    }
+
+    private void SyncVisionEffectToEyeState()
+    {
+        bool eyesClosed = GameManager.Instance != null && GameManager.Instance.GameState == GameManager.GameStates.Bad;
+        DarknessVisionEffect.SetGlobalActive(eyesClosed);
     }
 
     public void SetGroundType()
