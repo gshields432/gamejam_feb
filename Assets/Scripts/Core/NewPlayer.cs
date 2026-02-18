@@ -49,6 +49,7 @@ public class NewPlayer : PhysicsObject
     public float maxSpeed = 7; //Max move speed
     public float jumpPower = 17;
     private bool jumping;
+    private bool blinking = false;
     private Vector3 origLocalScale;
     [System.NonSerialized] public bool pounded;
     [System.NonSerialized] public bool pounding;
@@ -90,11 +91,13 @@ public class NewPlayer : PhysicsObject
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
 
         SetGroundType();
+        SyncVisionEffectToEyeState();
     }
 
     private void Update()
     {
         ComputeVelocity();
+        Blink();
     }
 
     protected void ComputeVelocity()
@@ -194,27 +197,41 @@ public class NewPlayer : PhysicsObject
     {
         //TODO: play blink anim (or should the open/close animations be unique?
         //if so move this just above the close/open eyes() )
-        //Input.GetButtonDown;
-        // if the state is CURRENTLY Neutral, swap to Bad   
-        if(GameManager.Instance.GameState == GameManager.GameStates.Neutral)
+        if (Input.GetButtonDown("Blink") && !blinking)
         {
-            CloseEyes();
+            Debug.Log("Blinked");
+            blinking = true;
+            // if the state is CURRENTLY Neutral, swap to Bad   
+            if (GameManager.Instance.GameState == GameManager.GameStates.Neutral)
+            {
+                CloseEyes();
+            }
+            else
+            {
+                OpenEyes();
+            }
+            blinking = false;
         }
-        else
-        {
-            OpenEyes();
-        }
+        
     }
     public void OpenEyes() {
-        
+        Debug.Log("Opened Eyes");
         // set the GameState to Neutral
         GameManager.Instance.GameState = GameManager.GameStates.Neutral;
+        SyncVisionEffectToEyeState();
 
     }
     public void CloseEyes() {
-
+        Debug.Log("Closed Eyes");
         // set the GameState to Bad
         GameManager.Instance.GameState = GameManager.GameStates.Bad;
+        SyncVisionEffectToEyeState();
+    }
+
+    private void SyncVisionEffectToEyeState()
+    {
+        bool eyesClosed = GameManager.Instance != null && GameManager.Instance.GameState == GameManager.GameStates.Bad;
+        DarknessVisionEffect.SetGlobalActive(eyesClosed);
     }
 
     public void SetGroundType()
