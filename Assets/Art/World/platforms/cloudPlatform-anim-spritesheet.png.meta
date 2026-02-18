@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: 2f9fa2ef4fe908c45b8ea0e24391fa48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7194927971161871324
+    second: cloudPlatform-anim-spritesheet_0
+  - first:
+      213: 4938717305454093470
+    second: cloudPlatform-anim-spritesheet_1
+  - first:
+      213: 6631685893324145388
+    second: cloudPlatform-anim-spritesheet_2
+  - first:
+      213: 6401113211592611548
+    second: cloudPlatform-anim-spritesheet_3
+  - first:
+      213: 5748411285759544006
+    second: cloudPlatform-anim-spritesheet_4
+  - first:
+      213: 6918406482677925127
+    second: cloudPlatform-anim-spritesheet_5
+  - first:
+      213: 7335980093851643850
+    second: cloudPlatform-anim-spritesheet_6
+  - first:
+      213: 9096882498445290563
+    second: cloudPlatform-anim-spritesheet_7
+  - first:
+      213: 488900996432432479
+    second: cloudPlatform-anim-spritesheet_8
+  - first:
+      213: 3829307368930076039
+    second: cloudPlatform-anim-spritesheet_9
+  - first:
+      213: 8083334058124036975
+    second: cloudPlatform-anim-spritesheet_10
+  - first:
+      213: -2643998313386747470
+    second: cloudPlatform-anim-spritesheet_11
+  - first:
+      213: -998307068593741034
+    second: cloudPlatform-anim-spritesheet_12
+  - first:
+      213: 978902537058611360
+    second: cloudPlatform-anim-spritesheet_13
+  - first:
+      213: 3691414071120064586
+    second: cloudPlatform-anim-spritesheet_14
+  - first:
+      213: -8488855425342718767
+    second: cloudPlatform-anim-spritesheet_15
+  - first:
+      213: 7901621176493047834
+    second: cloudPlatform-anim-spritesheet_16
+  - first:
+      213: -4966258592565018741
+    second: cloudPlatform-anim-spritesheet_17
+  - first:
+      213: -7595966394561175585
+    second: cloudPlatform-anim-spritesheet_18
+  - first:
+      213: 515665104472600368
+    second: cloudPlatform-anim-spritesheet_19
+  - first:
+      213: -9219974754257892116
+    second: cloudPlatform-anim-spritesheet_20
+  - first:
+      213: 3373544176671511366
+    second: cloudPlatform-anim-spritesheet_21
+  - first:
+      213: -5252757393761709135
+    second: cloudPlatform-anim-spritesheet_22
+  - first:
+      213: 5442320103439291159
+    second: cloudPlatform-anim-spritesheet_23
+  - first:
+      213: -2909225279575400309
+    second: cloudPlatform-anim-spritesheet_24
+  - first:
+      213: 8394350884372146955
+    second: cloudPlatform-anim-spritesheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cef5e612b762c90800000000000000
+      internalID: -7194927971161871324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 600
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e946aad0939d98440800000000000000
+      internalID: 4938717305454093470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce20e8d0f2b780c50800000000000000
+      internalID: 6631685893324145388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 400
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd699082d8255d850800000000000000
+      internalID: 6401113211592611548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca4b86ab9576cf40800000000000000
+      internalID: 5748411285759544006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 200
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70507cb6a0e130060800000000000000
+      internalID: 6918406482677925127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloudPlatform-anim-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf2d551703aec560800000000000000
+      internalID: 7335980093851643850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c7605a81ef471d54cab2e2646d154220
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":4.0},"gridSpriteSize":{"x":500.0,"y":200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cloudPlatform-anim-spritesheet_0: -7194927971161871324
+      cloudPlatform-anim-spritesheet_1: 4938717305454093470
+      cloudPlatform-anim-spritesheet_2: 6631685893324145388
+      cloudPlatform-anim-spritesheet_3: 6401113211592611548
+      cloudPlatform-anim-spritesheet_4: 5748411285759544006
+      cloudPlatform-anim-spritesheet_5: 6918406482677925127
+      cloudPlatform-anim-spritesheet_6: 7335980093851643850
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
