@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a3a022457d62a32449a64f7584976193
+guid: e499d2d9fada26a4797d288f80fd4f94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4228361496589477946
-    second: portal-anim-spritesheet_0
+      213: 7814728046595762378
+    second: chest-0018_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,89 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: portal-anim-spritesheet_0
+      name: chest-0018_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 20
         y: 0
-        width: 460
-        height: 640
+        width: 534
+        height: 325
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a38a72ad0682eaa30800000000000000
-      internalID: 4228361496589477946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: portal-anim-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 460
-        y: 0
-        width: 460
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b66bc3f98683c847ace8c0d27b9cc95
-      internalID: -1276816853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: portal-anim-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 0
-        width: 460
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cd163cef2ab1044c8061187aca4e226
-      internalID: -420326114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: portal-anim-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 1380
-        y: 0
-        width: 460
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d301c9e5b441f50468a03c206e2c9a02
-      internalID: 1411194842
+      spriteID: ac86f9111cd737c60800000000000000
+      internalID: 7814728046595762378
       vertices: []
       indices: 
       edges: []
@@ -191,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2b410ec2a79d3e844bcbe2d1ecf35540
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -199,14 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":460.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      portal-anim-spritesheet_0: 4228361496589477946
-      portal-anim-spritesheet_1: -1276816853
-      portal-anim-spritesheet_2: -420326114
-      portal-anim-spritesheet_3: 1411194842
+      chest-0018_0: 7814728046595762378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

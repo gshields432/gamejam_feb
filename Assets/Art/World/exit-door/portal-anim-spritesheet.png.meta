@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: e41b22f3135e8ae47ad9a4448d21f95c
+guid: a3a022457d62a32449a64f7584976193
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4710309826343420061
-    second: door-anim-spritesheet_0
-  - first:
-      213: -9088046444867233103
-    second: door-anim-spritesheet_1
-  - first:
-      213: 7185245652129418147
-    second: door-anim-spritesheet_2
-  - first:
-      213: -2879317482405544384
-    second: door-anim-spritesheet_3
-  - first:
-      213: 5322019520814151426
-    second: door-anim-spritesheet_4
-  - first:
-      213: -5206267681314494945
-    second: door-anim-spritesheet_5
+      213: 4228361496589477946
+    second: portal-anim-spritesheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door-anim-spritesheet_0
+      name: portal-anim-spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 600
-        height: 800
+        width: 460
+        height: 640
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,86 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36fb4c25b2e91aeb0800000000000000
-      internalID: -4710309826343420061
+      spriteID: a38a72ad0682eaa30800000000000000
+      internalID: 4228361496589477946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door-anim-spritesheet_1
+      name: portal-anim-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 600
+        x: 460
         y: 0
-        width: 600
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1badf6fa8e5c0e180800000000000000
-      internalID: -9088046444867233103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door-anim-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 600
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ab081ff9de17b360800000000000000
-      internalID: 7185245652129418147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door-anim-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 1800
-        y: 0
-        width: 600
-        height: 800
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04e35a9410c9a08d0800000000000000
-      internalID: -2879317482405544384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door-anim-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 2400
-        y: 0
-        width: 600
-        height: 800
+        width: 460
+        height: 640
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe58855723b24e4b8fa6a19e92c40ae
-      internalID: -536396535
+      spriteID: 7b66bc3f98683c847ace8c0d27b9cc95
+      internalID: -1276816853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door-anim-spritesheet_5
+      name: portal-anim-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 920
         y: 0
-        width: 600
-        height: 800
+        width: 460
+        height: 640
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +159,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c21176e131aa0d6448579cd949e2e139
-      internalID: 839546671
+      spriteID: 3cd163cef2ab1044c8061187aca4e226
+      internalID: -420326114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: portal-anim-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d301c9e5b441f50468a03c206e2c9a02
+      internalID: 1411194842
       vertices: []
       indices: 
       edges: []
@@ -250,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 03fee4f2c03eea8488973109a8bcccbb
+    spriteID: 2b410ec2a79d3e844bcbe2d1ecf35540
     internalID: 0
     vertices: []
     indices: 
@@ -260,14 +201,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":600.0,"y":800.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":460.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      door-anim-spritesheet_0: -4710309826343420061
-      door-anim-spritesheet_1: -9088046444867233103
-      door-anim-spritesheet_2: 7185245652129418147
-      door-anim-spritesheet_3: -2879317482405544384
-      door-anim-spritesheet_4: -536396535
-      door-anim-spritesheet_5: 839546671
+      portal-anim-spritesheet_0: 4228361496589477946
+      portal-anim-spritesheet_1: -1276816853
+      portal-anim-spritesheet_2: -420326114
+      portal-anim-spritesheet_3: 1411194842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
