@@ -1,52 +1,46 @@
 fileFormatVersion: 2
-guid: be4a3b17910aaa84ca7d8688b179bbac
+guid: 15e0121cc16ebf9429b3a9c8a3831234
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2812695921660436697
-    second: bed-spritesheet_0
+      213: -1766884914703921075
+    second: lamp-spritesheet_0
   - first:
-      213: 4410293767122776031
-    second: bed-spritesheet_1
+      213: -4212455536256370996
+    second: lamp-spritesheet_1
   - first:
-      213: 3373017290048741612
-    second: bed-spritesheet_2
+      213: 5026564124177170308
+    second: lamp-spritesheet_2
   - first:
-      213: -6728503028929931779
-    second: bed-spritesheet_3
+      213: 9006966440138694254
+    second: lamp-spritesheet_3
   - first:
-      213: -6077634572508316896
-    second: bed-spritesheet_4
+      213: -8803753007935415321
+    second: lamp-spritesheet_4
   - first:
-      213: 1273631170865508902
-    second: bed-spritesheet_5
+      213: 3205260394329822958
+    second: lamp-spritesheet_5
   - first:
-      213: -8982672884621849383
-    second: bed-spritesheet_6
+      213: -8359426700187765015
+    second: lamp-spritesheet_6
   - first:
-      213: 740489659054525540
-    second: bed-spritesheet_7
+      213: -4046267138179250786
+    second: lamp-spritesheet_7
   - first:
-      213: 1804998580586056474
-    second: bed-spritesheet_8
+      213: 4166534810501196665
+    second: lamp-spritesheet_8
   - first:
-      213: 7544126075471966831
-    second: bed-spritesheet_9
+      213: -4651671383093148026
+    second: lamp-spritesheet_9
   - first:
-      213: -5106311154229517820
-    second: bed-spritesheet_10
+      213: -1397764207328317728
+    second: lamp-spritesheet_10
   - first:
-      213: 917427848182310695
-    second: bed-spritesheet_11
+      213: 7481993187110264193
+    second: lamp-spritesheet_11
   - first:
-      213: 9151026521005626519
-    second: bed-spritesheet_12
-  - first:
-      213: 4439340861483677404
-    second: bed-spritesheet_13
-  - first:
-      213: 3374812611648974649
-    second: bed-spritesheet_14
+      213: 7964847780097169639
+    second: lamp-spritesheet_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,12 +136,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bed-spritesheet_0
+      name: lamp-spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,19 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d0a2c7d904b80720800000000000000
-      internalID: 2812695921660436697
+      spriteID: d40931c0883ca77e0800000000000000
+      internalID: -1766884914703921075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_1
+      name: lamp-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 350
+        x: 250
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -179,19 +173,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdfe87080d2843d30800000000000000
-      internalID: 4410293767122776031
+      spriteID: cc6bf41220a5a85c0800000000000000
+      internalID: -4212455536256370996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_2
+      name: lamp-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 700
+        x: 500
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -201,19 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ce02b92ba5d5fce20800000000000000
-      internalID: 3373017290048741612
+      spriteID: 48f7d466071f1c540800000000000000
+      internalID: 5026564124177170308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_3
+      name: lamp-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 750
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -223,19 +217,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df5dd72f42e8f92a0800000000000000
-      internalID: -6728503028929931779
+      spriteID: e6ed450a14c2ffc70800000000000000
+      internalID: 9006966440138694254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_4
+      name: lamp-spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1000
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -245,19 +239,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b32079e87e7aba0800000000000000
-      internalID: -6077634572508316896
+      spriteID: 7eb9bb79849c2d580800000000000000
+      internalID: -8803753007935415321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_5
+      name: lamp-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee658a0b85f5b7c20800000000000000
+      internalID: 3205260394329822958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e67461d4b95dfb80800000000000000
+      internalID: -8359426700187765015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp-spritesheet_7
       rect:
         serializedVersion: 2
         x: 1750
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,19 +305,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 622bd4a4dc8dca110800000000000000
-      internalID: 1273631170865508902
+      spriteID: e954d72d975c8d7c0800000000000000
+      internalID: -4046267138179250786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_6
+      name: lamp-spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2000
         y: 250
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -289,19 +327,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dcc49a8a92275380800000000000000
-      internalID: -8982672884621849383
+      spriteID: 97b293cb55182d930800000000000000
+      internalID: 4166534810501196665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_7
+      name: lamp-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 250
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68602eec581f17fb0800000000000000
+      internalID: -4651671383093148026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp-spritesheet_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -311,19 +371,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46c8bcfeb6fb64a00800000000000000
-      internalID: 740489659054525540
+      spriteID: 0eea07eebd42a9ce0800000000000000
+      internalID: -1397764207328317728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_8
+      name: lamp-spritesheet_11
       rect:
         serializedVersion: 2
-        x: 350
+        x: 250
         y: 0
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -333,19 +393,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1b8aef45a4ac0910800000000000000
-      internalID: 1804998580586056474
+      spriteID: 18d9991992165d760800000000000000
+      internalID: 7481993187110264193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_9
+      name: lamp-spritesheet_12
       rect:
         serializedVersion: 2
-        x: 700
+        x: 500
         y: 0
-        width: 348
+        width: 250
         height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -355,140 +415,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f62b445f1be12b860800000000000000
-      internalID: 7544126075471966831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 402e8834f0db229b0800000000000000
-      internalID: -5106311154229517820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 72725f564cb5bbc00800000000000000
-      internalID: 917427848182310695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79418baf22afefe70800000000000000
-      internalID: 9151026521005626519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 2100
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd67c9d2ef4bb9d30800000000000000
-      internalID: 4439340861483677404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 2450
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93f68d4903eb5de20800000000000000
-      internalID: 3374812611648974649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 2800
-        y: 0
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb833948101f93e4aac23b712afdb689
-      internalID: -740398331
+      spriteID: 7e810ce3bd2d88e60800000000000000
+      internalID: 7964847780097169639
       vertices: []
       indices: 
       edges: []
@@ -497,7 +425,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 36b411f458e65ff4ab17804c3276d11d
+    spriteID: 51cb61f6a3192c147a45973990f47ff6
     internalID: 0
     vertices: []
     indices: 
@@ -507,24 +435,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":2.0},"gridSpriteSize":{"x":348.0,"y":250.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":2.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":2.0},"gridSpriteSize":{"x":250.0,"y":250.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bed-spritesheet_0: 2812695921660436697
-      bed-spritesheet_1: 4410293767122776031
-      bed-spritesheet_10: -5106311154229517820
-      bed-spritesheet_11: 917427848182310695
-      bed-spritesheet_12: 9151026521005626519
-      bed-spritesheet_13: 4439340861483677404
-      bed-spritesheet_14: 3374812611648974649
-      bed-spritesheet_15: -740398331
-      bed-spritesheet_2: 3373017290048741612
-      bed-spritesheet_3: -6728503028929931779
-      bed-spritesheet_4: -6077634572508316896
-      bed-spritesheet_5: 1273631170865508902
-      bed-spritesheet_6: -8982672884621849383
-      bed-spritesheet_7: 740489659054525540
-      bed-spritesheet_8: 1804998580586056474
-      bed-spritesheet_9: 7544126075471966831
+      lamp-spritesheet_0: -1766884914703921075
+      lamp-spritesheet_1: -4212455536256370996
+      lamp-spritesheet_10: -1397764207328317728
+      lamp-spritesheet_11: 7481993187110264193
+      lamp-spritesheet_12: 7964847780097169639
+      lamp-spritesheet_2: 5026564124177170308
+      lamp-spritesheet_3: 9006966440138694254
+      lamp-spritesheet_4: -8803753007935415321
+      lamp-spritesheet_5: 3205260394329822958
+      lamp-spritesheet_6: -8359426700187765015
+      lamp-spritesheet_7: -4046267138179250786
+      lamp-spritesheet_8: 4166534810501196665
+      lamp-spritesheet_9: -4651671383093148026
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

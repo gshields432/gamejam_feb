@@ -1,52 +1,106 @@
 fileFormatVersion: 2
-guid: be4a3b17910aaa84ca7d8688b179bbac
+guid: 0fe9081ac70b2594aaa631586c8f2ef7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2812695921660436697
-    second: bed-spritesheet_0
+      213: 2333395442419210564
+    second: stove-spritesheet_0
   - first:
-      213: 4410293767122776031
-    second: bed-spritesheet_1
+      213: 8127699601296659092
+    second: stove-spritesheet_1
   - first:
-      213: 3373017290048741612
-    second: bed-spritesheet_2
+      213: -3002768154671165830
+    second: stove-spritesheet_2
   - first:
-      213: -6728503028929931779
-    second: bed-spritesheet_3
+      213: -4710722787194066310
+    second: stove-spritesheet_3
   - first:
-      213: -6077634572508316896
-    second: bed-spritesheet_4
+      213: 6645297532081463225
+    second: stove-spritesheet_4
   - first:
-      213: 1273631170865508902
-    second: bed-spritesheet_5
+      213: 6822538975929081586
+    second: stove-spritesheet_5
   - first:
-      213: -8982672884621849383
-    second: bed-spritesheet_6
+      213: -5905344145546711276
+    second: stove-spritesheet_6
   - first:
-      213: 740489659054525540
-    second: bed-spritesheet_7
+      213: 762927976892321360
+    second: stove-spritesheet_7
   - first:
-      213: 1804998580586056474
-    second: bed-spritesheet_8
+      213: 4346234035625862443
+    second: stove-spritesheet_8
   - first:
-      213: 7544126075471966831
-    second: bed-spritesheet_9
+      213: 3618417322688606876
+    second: stove-spritesheet_9
   - first:
-      213: -5106311154229517820
-    second: bed-spritesheet_10
+      213: 1743206884103713300
+    second: stove-spritesheet_10
   - first:
-      213: 917427848182310695
-    second: bed-spritesheet_11
+      213: -8596543116993174986
+    second: stove-spritesheet_11
   - first:
-      213: 9151026521005626519
-    second: bed-spritesheet_12
+      213: 4084321376050921512
+    second: stove-spritesheet_12
   - first:
-      213: 4439340861483677404
-    second: bed-spritesheet_13
+      213: 1380047767511131137
+    second: stove-spritesheet_13
   - first:
-      213: 3374812611648974649
-    second: bed-spritesheet_14
+      213: 3368181568512187790
+    second: stove-spritesheet_14
+  - first:
+      213: -26681612849578492
+    second: stove-spritesheet_15
+  - first:
+      213: 2575322943176552648
+    second: stove-spritesheet_16
+  - first:
+      213: -7811685301735682222
+    second: stove-spritesheet_17
+  - first:
+      213: -7210489671409091267
+    second: stove-spritesheet_18
+  - first:
+      213: -8910038052774833465
+    second: stove-spritesheet_19
+  - first:
+      213: -3416837036192213139
+    second: stove-spritesheet_20
+  - first:
+      213: 6975095766942750348
+    second: stove-spritesheet_21
+  - first:
+      213: -2573602287058614477
+    second: stove-spritesheet_22
+  - first:
+      213: -7424244983158623102
+    second: stove-spritesheet_23
+  - first:
+      213: -5462173171951314120
+    second: stove-spritesheet_24
+  - first:
+      213: 3490952172267383998
+    second: stove-spritesheet_25
+  - first:
+      213: 4392919731690872748
+    second: stove-spritesheet_26
+  - first:
+      213: 2831489960592882001
+    second: stove-spritesheet_27
+  - first:
+      213: -7225787459932111571
+    second: stove-spritesheet_28
+  - first:
+      213: 3743801104205687981
+    second: stove-spritesheet_29
+  - first:
+      213: 8443065754960835256
+    second: stove-spritesheet_30
+  - first:
+      213: -4856300150184960032
+    second: stove-spritesheet_31
+  - first:
+      213: -1756630802452407982
+    second: stove-spritesheet_32
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,167 +196,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bed-spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d0a2c7d904b80720800000000000000
-      internalID: 2812695921660436697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdfe87080d2843d30800000000000000
-      internalID: 4410293767122776031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce02b92ba5d5fce20800000000000000
-      internalID: 3373017290048741612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 1050
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df5dd72f42e8f92a0800000000000000
-      internalID: -6728503028929931779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 1400
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02b32079e87e7aba0800000000000000
-      internalID: -6077634572508316896
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 622bd4a4dc8dca110800000000000000
-      internalID: 1273631170865508902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 2100
-        y: 250
-        width: 348
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dcc49a8a92275380800000000000000
-      internalID: -8982672884621849383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bed-spritesheet_7
+      name: stove-spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46c8bcfeb6fb64a00800000000000000
-      internalID: 740489659054525540
+      spriteID: 44999e1cac2e16020800000000000000
+      internalID: 2333395442419210564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_8
+      name: stove-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 350
+        x: 355
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1b8aef45a4ac0910800000000000000
-      internalID: 1804998580586056474
+      spriteID: 4921f5899b36bc070800000000000000
+      internalID: 8127699601296659092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_9
+      name: stove-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 700
+        x: 710
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f62b445f1be12b860800000000000000
-      internalID: 7544126075471966831
+      spriteID: a7e48fdc5460456d0800000000000000
+      internalID: -3002768154671165830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_10
+      name: stove-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1050
+        x: 1065
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,20 +277,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 402e8834f0db229b0800000000000000
-      internalID: -5106311154229517820
+      spriteID: a7aa5f1659620aeb0800000000000000
+      internalID: -4710722787194066310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_11
+      name: stove-spritesheet_4
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1420
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72725f564cb5bbc00800000000000000
-      internalID: 917427848182310695
+      spriteID: 9bfde7aa5e6d83c50800000000000000
+      internalID: 6645297532081463225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_12
+      name: stove-spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1750
+        x: 1775
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79418baf22afefe70800000000000000
-      internalID: 9151026521005626519
+      spriteID: 2fe928e1d078eae50800000000000000
+      internalID: 6822538975929081586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_13
+      name: stove-spritesheet_6
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2130
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,20 +343,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd67c9d2ef4bb9d30800000000000000
-      internalID: 4439340861483677404
+      spriteID: 41f614899c00c0ea0800000000000000
+      internalID: -5905344145546711276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_14
+      name: stove-spritesheet_7
       rect:
         serializedVersion: 2
-        x: 2450
+        x: 2485
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,30 +365,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93f68d4903eb5de20800000000000000
-      internalID: 3374812611648974649
+      spriteID: 05ecfdbe3f6769a00800000000000000
+      internalID: 762927976892321360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bed-spritesheet_15
+      name: stove-spritesheet_8
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 2840
         y: 0
-        width: 348
-        height: 250
+        width: 355
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cb833948101f93e4aac23b712afdb689
-      internalID: -740398331
+      spriteID: b25213cf3dce05c30800000000000000
+      internalID: 4346234035625862443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stove-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 0
+        width: 355
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9279ff3263373230800000000000000
+      internalID: 3618417322688606876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stove-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 0
+        width: 355
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4127409dc6d113810800000000000000
+      internalID: 1743206884103713300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stove-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3905
+        y: 0
+        width: 355
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632ea4fd491f2b880800000000000000
+      internalID: -8596543116993174986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stove-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 0
+        width: 355
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820cc00e6ac6ea830800000000000000
+      internalID: 4084321376050921512
       vertices: []
       indices: 
       edges: []
@@ -497,7 +485,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 36b411f458e65ff4ab17804c3276d11d
+    spriteID: 6dd4a5b3671573548a04dbfc53758608
     internalID: 0
     vertices: []
     indices: 
@@ -507,24 +495,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":9.0,"y":2.0},"gridSpriteSize":{"x":348.0,"y":250.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":2.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":1.0},"gridSpriteSize":{"x":355.0,"y":326.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      bed-spritesheet_0: 2812695921660436697
-      bed-spritesheet_1: 4410293767122776031
-      bed-spritesheet_10: -5106311154229517820
-      bed-spritesheet_11: 917427848182310695
-      bed-spritesheet_12: 9151026521005626519
-      bed-spritesheet_13: 4439340861483677404
-      bed-spritesheet_14: 3374812611648974649
-      bed-spritesheet_15: -740398331
-      bed-spritesheet_2: 3373017290048741612
-      bed-spritesheet_3: -6728503028929931779
-      bed-spritesheet_4: -6077634572508316896
-      bed-spritesheet_5: 1273631170865508902
-      bed-spritesheet_6: -8982672884621849383
-      bed-spritesheet_7: 740489659054525540
-      bed-spritesheet_8: 1804998580586056474
-      bed-spritesheet_9: 7544126075471966831
+      stove-spritesheet_0: 2333395442419210564
+      stove-spritesheet_1: 8127699601296659092
+      stove-spritesheet_10: 1743206884103713300
+      stove-spritesheet_11: -8596543116993174986
+      stove-spritesheet_12: 4084321376050921512
+      stove-spritesheet_2: -3002768154671165830
+      stove-spritesheet_3: -4710722787194066310
+      stove-spritesheet_4: 6645297532081463225
+      stove-spritesheet_5: 6822538975929081586
+      stove-spritesheet_6: -5905344145546711276
+      stove-spritesheet_7: 762927976892321360
+      stove-spritesheet_8: 4346234035625862443
+      stove-spritesheet_9: 3618417322688606876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
