@@ -167,7 +167,7 @@ public class NewPlayer : PhysicsObject
             //Allow the player to jump even if they have just fallen off an edge ("fall forgiveness")
             if (!grounded)
             {
-                bool eyesClosed = GameManager.Instance.GameState == GameManager.GameStates.Bad;
+                bool eyesClosed = GameManager.Instance.GameState == GameManager.GameStates.ClosedEyes;
 
                 if (!eyesClosed && InCloudVolume && velocity.y < 0)
                 {
