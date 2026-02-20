@@ -596,33 +596,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: box-spritesheet_20
-      rect:
-        serializedVersion: 2
-        x: 1696
-        y: 0
-        width: 212
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 917a3872bb722014f9abe913f0295168
-      internalID: 1966285610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8c8d35b1a8485a24ab015892d8537031
+    spriteID: fec334c4ac3e43b4680625e935795e1c
     internalID: 0
     vertices: []
     indices: 
@@ -647,7 +625,6 @@ TextureImporter:
       box-spritesheet_18: -5395632650994370697
       box-spritesheet_19: -5842191757625233692
       box-spritesheet_2: -692678479535161754
-      box-spritesheet_20: 1966285610
       box-spritesheet_3: 7465110739516161896
       box-spritesheet_4: 2520247912588316219
       box-spritesheet_5: -8639981636257596400

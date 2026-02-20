@@ -1,49 +1,37 @@
 fileFormatVersion: 2
-guid: f511079d8e698cb43af2d9e6d2cc8d2b
+guid: 0c238cffff5f1d9479a3a3d54cf7a252
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1295955565587498720
-    second: painting_0
+      213: -259220038730679005
+    second: teddy-spritesheet_0
   - first:
-      213: 2584314847056507604
-    second: painting_1
+      213: -1148414076887564587
+    second: teddy-spritesheet_1
   - first:
-      213: -8934275123071076098
-    second: painting_2
+      213: 1186308795336854327
+    second: teddy-spritesheet_2
   - first:
-      213: -9058501344329623944
-    second: painting_3
+      213: -9085293472518348326
+    second: teddy-spritesheet_3
   - first:
-      213: -7501845245540454079
-    second: painting_4
+      213: -3633627836563869282
+    second: teddy-spritesheet_4
   - first:
-      213: 8548375014826149124
-    second: painting_5
+      213: -644609458122501705
+    second: teddy-spritesheet_5
   - first:
-      213: 2939989131603347213
-    second: painting_6
+      213: 1586724485995663201
+    second: teddy-spritesheet_6
   - first:
-      213: 8855813980084972380
-    second: painting_7
+      213: -2427328905435331339
+    second: teddy-spritesheet_7
   - first:
-      213: -8908327269505673831
-    second: painting_8
+      213: -5062832968607877575
+    second: teddy-spritesheet_8
   - first:
-      213: 2871651300898319117
-    second: painting_9
-  - first:
-      213: 8957466383449598293
-    second: painting_10
-  - first:
-      213: -5418875344149407638
-    second: painting_11
-  - first:
-      213: 4617328739711405773
-    second: painting_12
-  - first:
-      213: 7815811905830196840
-    second: painting_13
+      213: -1629838125229449979
+    second: teddy-spritesheet_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -90,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: painting_0
+      name: teddy-spritesheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e6888b78b82cf110800000000000000
-      internalID: 1295955565587498720
+      spriteID: 32d7bc88fb0176cf0800000000000000
+      internalID: -259220038730679005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_1
+      name: teddy-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 200
+        x: 300
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,42 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d2329e39a45dd320800000000000000
-      internalID: 2584314847056507604
+      spriteID: 5defe0c4b730010f0800000000000000
+      internalID: -1148414076887564587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_2
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef83db38c14130480800000000000000
-      internalID: -8934275123071076098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting_3
+      name: teddy-spritesheet_2
       rect:
         serializedVersion: 2
         x: 600
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87695d5750db94280800000000000000
-      internalID: -9058501344329623944
+      spriteID: 73b89f3609d967010800000000000000
+      internalID: 1186308795336854327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_4
+      name: teddy-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 800
+        x: 900
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,42 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 141bb93ee7714e790800000000000000
-      internalID: -7501845245540454079
+      spriteID: ad16e5209bd8ae180800000000000000
+      internalID: -9085293472518348326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_5
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4058985e8cde1a670800000000000000
-      internalID: 8548375014826149124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting_6
+      name: teddy-spritesheet_4
       rect:
         serializedVersion: 2
         x: 1200
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d070ab8d980fcc820800000000000000
-      internalID: 2939989131603347213
+      spriteID: e91b3a30cb2c29dc0800000000000000
+      internalID: -3633627836563869282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_7
+      name: teddy-spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1500
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,42 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5b27ef05eb26ea70800000000000000
-      internalID: 8855813980084972380
+      spriteID: 7b150c5fc13ed07f0800000000000000
+      internalID: -644609458122501705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_8
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9955036fb834f5480800000000000000
-      internalID: -8908327269505673831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting_9
+      name: teddy-spritesheet_6
       rect:
         serializedVersion: 2
         x: 1800
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0b25dcb4a72ad720800000000000000
-      internalID: 2871651300898319117
+      spriteID: 16f8f20638d250610800000000000000
+      internalID: 1586724485995663201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_10
+      name: teddy-spritesheet_7
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 2100
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,42 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 559240197305f4c70800000000000000
-      internalID: 8957466383449598293
+      spriteID: 5f44d769835605ed0800000000000000
+      internalID: -2427328905435331339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_11
-      rect:
-        serializedVersion: 2
-        x: 2200
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a681addb5994cc4b0800000000000000
-      internalID: -5418875344149407638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting_12
+      name: teddy-spritesheet_8
       rect:
         serializedVersion: 2
         x: 2400
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dce43bd660c041040800000000000000
-      internalID: 4617328739711405773
+      spriteID: 936bdf43d343db9b0800000000000000
+      internalID: -5062832968607877575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting_13
+      name: teddy-spritesheet_9
       rect:
         serializedVersion: 2
-        x: 2600
+        x: 2700
         y: 0
-        width: 200
-        height: 200
+        width: 300
+        height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,8 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8661746b487577c60800000000000000
-      internalID: 7815811905830196840
+      spriteID: 50d5f404cd6a169e0800000000000000
+      internalID: -1629838125229449979
       vertices: []
       indices: 
       edges: []
@@ -450,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 636a4bf0e4922e54f9d77a4559bf3015
+    spriteID: 12b6a26e49b92564285e0351b3522756
     internalID: 0
     vertices: []
     indices: 
@@ -460,22 +360,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":14.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":300.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      painting_0: 1295955565587498720
-      painting_1: 2584314847056507604
-      painting_10: 8957466383449598293
-      painting_11: -5418875344149407638
-      painting_12: 4617328739711405773
-      painting_13: 7815811905830196840
-      painting_2: -8934275123071076098
-      painting_3: -9058501344329623944
-      painting_4: -7501845245540454079
-      painting_5: 8548375014826149124
-      painting_6: 2939989131603347213
-      painting_7: 8855813980084972380
-      painting_8: -8908327269505673831
-      painting_9: 2871651300898319117
+      teddy-spritesheet_0: -259220038730679005
+      teddy-spritesheet_1: -1148414076887564587
+      teddy-spritesheet_2: 1186308795336854327
+      teddy-spritesheet_3: -9085293472518348326
+      teddy-spritesheet_4: -3633627836563869282
+      teddy-spritesheet_5: -644609458122501705
+      teddy-spritesheet_6: 1586724485995663201
+      teddy-spritesheet_7: -2427328905435331339
+      teddy-spritesheet_8: -5062832968607877575
+      teddy-spritesheet_9: -1629838125229449979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
