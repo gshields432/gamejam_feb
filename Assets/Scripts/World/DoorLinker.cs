@@ -6,6 +6,14 @@ public class DoorLinker : MonoBehaviour
     [SerializeField] private Transform _target;
 
     private bool _playerInRange;
+    private Vector2 _landingPos;
+
+    private void Awake()
+    {
+        var landingPos = _target.position;
+        var adjusted = new Vector2(landingPos.x, landingPos.y - 1.8f);
+        _landingPos = adjusted;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -50,11 +58,11 @@ public class DoorLinker : MonoBehaviour
         }
 
         Transform playerToMove = _player != null ? _player : triggerPlayer;
-        playerToMove.position = _target.position;
+        playerToMove.position = _landingPos;
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawCube(_target.position, Vector2.one);
+        Gizmos.DrawCube(_landingPos, Vector2.one);
     }
 }
