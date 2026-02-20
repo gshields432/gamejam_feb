@@ -4,6 +4,7 @@ public class DoorLinker : MonoBehaviour
 {
     [SerializeField] private Transform _player;
     [SerializeField] private Transform _target;
+    [SerializeField] private Animator _animator;
 
     private bool _playerInRange;
     private Vector2 _landingPos;
@@ -20,6 +21,7 @@ public class DoorLinker : MonoBehaviour
         if (collision.gameObject == NewPlayer.Instance.gameObject)
         {
             _playerInRange = true;
+            _animator.SetBool("OpenDoor", true);
         }
     }
 
@@ -41,6 +43,7 @@ public class DoorLinker : MonoBehaviour
         if (collision.gameObject == NewPlayer.Instance.gameObject)
         {
             _playerInRange = false;
+            _animator.SetBool("OpenDoor", false);
         }
     }
 
