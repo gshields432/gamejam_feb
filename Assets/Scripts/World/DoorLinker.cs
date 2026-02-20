@@ -23,16 +23,16 @@ public class DoorLinker : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.gameObject != NewPlayer.Instance.gameObject)
+        if (!_playerInRange)
         {
             return;
         }
 
         if (Input.GetButtonDown("Submit"))
         {
-            TryEnter(collision.transform);
+            Enter();
         }
     }
 
@@ -44,21 +44,15 @@ public class DoorLinker : MonoBehaviour
         }
     }
 
-    private void TryEnter(Transform triggerPlayer)
+    private void Enter()
     {
-        if (!_playerInRange)
-        {
-            return;
-        }
-
         if (_target == null)
         {
             Debug.LogWarning($"{name}: DoorLinker target is not assigned.", this);
             return;
         }
 
-        Transform playerToMove = _player != null ? _player : triggerPlayer;
-        playerToMove.position = _landingPos;
+        _player.position = _landingPos;
     }
 
     private void OnDrawGizmosSelected()
