@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _player: {fileID: 0}
   _target: {fileID: 0}
+  _animator: {fileID: 4029034894396011602}
 --- !u!61 &1817591192535684965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -172,6 +173,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6, type: 3}
+--- !u!95 &4029034894396011602 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6066055290009648945, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7189140037920344931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9172530900385848035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2058026862810829184, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6,
