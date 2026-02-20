@@ -93,7 +93,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.9, y: 6.4}
+  m_Size: {x: 4.1, y: 5.56}
   m_EdgeRadius: 0
 --- !u!1001 &7189140037920344931
 PrefabInstance:
@@ -106,12 +106,12 @@ PrefabInstance:
     - target: {fileID: 2058026862810829184, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 2058026862810829184, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 2058026862810829184, guid: 46b7d8bd1e2a9224dbf1a22bdc2f0ac6,
         type: 3}
