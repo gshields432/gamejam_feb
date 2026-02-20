@@ -218,8 +218,8 @@ public class NewPlayer : PhysicsObject
         {
             Debug.Log("Blinked");
             blinking = true;
-            // if the state is CURRENTLY Neutral, swap to Bad   
-            if (GameManager.Instance.GameState == GameManager.GameStates.Neutral)
+
+            if (GameManager.Instance.GameState == GameManager.GameStates.OpenEyes)
             {
                 CloseEyes();
             }
@@ -234,20 +234,20 @@ public class NewPlayer : PhysicsObject
     public void OpenEyes() {
         Debug.Log("Opened Eyes");
         // set the GameState to Neutral
-        GameManager.Instance.GameState = GameManager.GameStates.Neutral;
+        GameManager.Instance.GameState = GameManager.GameStates.OpenEyes;
         SyncVisionEffectToEyeState();
 
     }
     public void CloseEyes() {
         Debug.Log("Closed Eyes");
         // set the GameState to Bad
-        GameManager.Instance.GameState = GameManager.GameStates.Bad;
+        GameManager.Instance.GameState = GameManager.GameStates.ClosedEyes;
         SyncVisionEffectToEyeState();
     }
 
     private void SyncVisionEffectToEyeState()
     {
-        bool eyesClosed = GameManager.Instance != null && GameManager.Instance.GameState == GameManager.GameStates.Bad;
+        bool eyesClosed = GameManager.Instance != null && GameManager.Instance.GameState == GameManager.GameStates.ClosedEyes;
         DarknessVisionEffect.SetGlobalActive(eyesClosed);
     }
 
