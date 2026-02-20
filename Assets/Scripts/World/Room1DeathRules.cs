@@ -41,7 +41,7 @@ public class Room1DeathRules : MonoBehaviour
         if (Time.time - lastDeathTime < minTimeBetweenDeaths) return;
 
         bool eyesClosed = GameManager.Instance != null &&
-                          GameManager.Instance.GameState == GameManager.GameStates.Bad;
+                          GameManager.Instance.GameState == GameManager.GameStates.ClosedEyes;
 
         Debug.Log($"Hit: {col.tag} | EyesClosed: {eyesClosed} | VelY: {player.velocity.y}");
 

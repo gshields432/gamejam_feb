@@ -8,7 +8,7 @@ public class CloudPlatformPoof : MonoBehaviour
     [SerializeField] private Collider2D solidCollider;
 
     [Header("Timing")]
-    [SerializeField] private float poofDelay = 1.0f;        
+    [SerializeField] private float poofDelay = 1.0f;
 
 
     void OnCollisionEnter2D(Collision2D col)
@@ -18,7 +18,7 @@ public class CloudPlatformPoof : MonoBehaviour
         if (player == null) return;
 
         bool eyesClosed = GameManager.Instance != null &&
-                          GameManager.Instance.GameState == GameManager.GameStates.Bad;
+                          GameManager.Instance.GameState == GameManager.GameStates.ClosedEyes;
         if (!eyesClosed) // Don't poof cloud if player has their eyes closed.
         {
             StartCoroutine(PoofRoutine());
