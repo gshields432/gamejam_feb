@@ -38,7 +38,7 @@ public class CameraEffects : MonoBehaviour
 
     public void Shake(float shake, float length)
     {
-        shakeLength = length;
-        multiChannelPerlin.m_FrequencyGain = shake;
+        // shakeLength = length;
+        // multiChannelPerlin.m_FrequencyGain = shake;
     }
 }

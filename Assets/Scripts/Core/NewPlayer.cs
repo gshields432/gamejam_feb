@@ -54,6 +54,14 @@ public class NewPlayer : PhysicsObject
     [System.NonSerialized] public bool pounded;
     [System.NonSerialized] public bool pounding;
     [System.NonSerialized] public bool shooting = false;
+    public float fallSpeed;
+    public float fallIntensity;
+    private float fallMinSpeed = 2f;
+    private float fallMaxSpeed = 20f;
+    [HideInInspector] public float maxDownSpeedThisAir;
+    [HideInInspector] public int cloudVolumeCount;
+    public bool InCloudVolume => cloudVolumeCount > 0;
+
 
     [Header("Inventory")]
     public float ammo;
@@ -89,7 +97,6 @@ public class NewPlayer : PhysicsObject
 
         //Find all sprites so we can hide them when the player dies.
         graphicSprites = GetComponentsInChildren<SpriteRenderer>();
-
         SetGroundType();
         SyncVisionEffectToEyeState();
     }
@@ -160,7 +167,14 @@ public class NewPlayer : PhysicsObject
             //Allow the player to jump even if they have just fallen off an edge ("fall forgiveness")
             if (!grounded)
             {
-                if (fallForgivenessCounter < fallForgiveness && !jumping)
+                bool eyesClosed = GameManager.Instance.GameState == GameManager.GameStates.Bad;
+
+                if (!eyesClosed && InCloudVolume && velocity.y < 0)
+                {
+                    float cloudTerminalFall = -2f;
+                    velocity.y = cloudTerminalFall;
+                }
+                else if (fallForgivenessCounter < fallForgiveness && !jumping)
                 {
                     fallForgivenessCounter += Time.deltaTime;
                 }
@@ -168,9 +182,11 @@ public class NewPlayer : PhysicsObject
                 {
                     animator.SetBool("grounded", false);
                 }
+                maxDownSpeedThisAir = Mathf.Min(maxDownSpeedThisAir, velocity.y);
             }
             else
             {
+                maxDownSpeedThisAir = 0f;
                 fallForgivenessCounter = 0;
                 animator.SetBool("grounded", true);
             }
@@ -183,9 +199,10 @@ public class NewPlayer : PhysicsObject
             animator.SetBool("hasChair", GameManager.Instance.inventory.ContainsKey("chair"));
             targetVelocity = move * maxSpeed;
 
-
-
-
+            // update exposd fall speeds
+            fallSpeed = Mathf.Max(0f, -velocity.y);
+            fallIntensity = Mathf.InverseLerp(fallMinSpeed, fallMaxSpeed, fallSpeed);
+            fallIntensity *= fallIntensity;
         }
         else
         {
@@ -474,6 +491,42 @@ public class NewPlayer : PhysicsObject
         for (int i = 0; i < cheatItems.Length; i++)
         {
             GameManager.Instance.GetInventoryItem(cheatItems[i], null);
+        }
+    }
+
+    public void HardRespawnAt(Vector2 worldPos)
+    {
+        dead = false;
+
+        // Reset  motion
+        velocity = Vector2.zero;
+        targetVelocity = Vector2.zero;
+
+        // Relocate player
+        transform.position = new Vector3(worldPos.x, worldPos.y, transform.position.z);
+
+        if (animator != null)
+        {
+            animator.Rebind();
+            animator.Update(0f);
+            animator.SetBool("grounded", false);
+        }
+
+        if (graphicSprites != null)
+        {
+            foreach (var c in graphicSprites)
+            {
+                var sr = c as SpriteRenderer;
+                if (sr != null) sr.gameObject.SetActive(true);
+            }
+        }
+
+        health = maxHealth;
+
+        if (recoveryCounter != null)
+        {
+            recoveryCounter.counter = 999f;
+            recoveryCounter.recovering = false;
         }
     }
 }
