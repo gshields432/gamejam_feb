@@ -7220,7 +7220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DarknessVisionEffect
   darkness: 1
-  ambientVisibility: 1
+  ambientVisibility: 0
   edgeSoftness: 0.35
   effectEnabled: 1
   darknessShader: {fileID: 4800000, guid: 4f3f8ad6d34f41f5910d8f0506bc9b15, type: 3}
