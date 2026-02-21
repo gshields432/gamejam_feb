@@ -76,3 +76,9 @@ crashlytics-build.properties
 
 # VS Code specific files.
 .vscode/
+
+# Plastic directory
+.plastic/
+
+# Visual Studio dev files
+*.slnx
