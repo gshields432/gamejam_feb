@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
-public class Furniture : PhysicsObject
+public class Lamp : PhysicsObject
 {
     [Header ("Reference")]
     public EnemyBase enemyBase;
     [SerializeField] private GameObject graphic;
 
     [Header ("Properties")]
+    private Animator animator;
+    GameManager.GameStates prevState;
     [SerializeField] private LayerMask layerMask; //What can the Walker actually touch?
     public enum EnemyType{ Bug, Zombie }; //Bugs will simply patrol. Zombie's will immediately start chasing you forever until you defeat them.
     [SerializeField] private EnemyType enemyType;
@@ -47,7 +50,9 @@ public class Furniture : PhysicsObject
     
     void Start()
     {
+        prevState = GameManager.GameStates.OpenEyes;
         enemyBase = GetComponent<EnemyBase>();
+        animator = GetComponent<Animator>();
         origScale = transform.localScale;
         rayCastSizeOrig = rayCastSize;
         maxSpeed -= Random.Range(0, maxSpeedDeviation);
@@ -58,7 +63,7 @@ public class Furniture : PhysicsObject
             directionSmooth = 0;
         }
     }
-    void OnOpenEyes() { }
+
     void OnDrawGizmosSelected()
     {
         // Draw a yellow sphere at the transform's position
@@ -69,8 +74,23 @@ public class Furniture : PhysicsObject
     private void Update()
     {
         ComputeVelocity();
+        handleEyes();
     }
+    void handleEyes() {
+        //BUG: when detransforming, the animation plays twice
+        if (GameManager.Instance.GameState.Equals(GameManager.GameStates.OpenEyes)) {
+            animator.SetTrigger("transform");
+            animator.SetBool("isWalking",true);
+            Debug.Log("animator.IsInTransition(0): "+animator.IsInTransition(0));
+            attentionRange = 10000000000;
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetTrigger("detransform");
+        }
 
+    }
     protected void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
@@ -212,19 +232,23 @@ public class Furniture : PhysicsObject
             //Debug.Log("neutral state in furniture.cs");
             move = Vector2.zero;
         }
-        enemyBase.animator.SetBool("grounded", grounded);
-        enemyBase.animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+
+        //enemyBase.animator.SetBool("grounded", grounded);
+        //enemyBase.animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
         targetVelocity = move * maxSpeed;
     }
 
     public void Jump()
     {
-        if (grounded)
-        {
-            velocity.y = jumpPower;
-            PlayJumpSound();
-            PlayStepSound();
-        }
+        // For diversity in movements, lets try lamps that can't jump - Grant
+
+
+        //if (grounded)
+        //{
+        //    velocity.y = jumpPower;
+        //    PlayJumpSound();
+        //    PlayStepSound();
+        //}
     }
 
     public void PlayStepSound()
@@ -235,8 +259,8 @@ public class Furniture : PhysicsObject
 
     public void PlayJumpSound()
     {
-        enemyBase.audioSource.pitch = (Random.Range(0.6f, 1f));
-        enemyBase.audioSource.PlayOneShot(jumpSound);
+        //enemyBase.audioSource.pitch = (Random.Range(0.6f, 1f));
+        //enemyBase.audioSource.PlayOneShot(jumpSound);
     }
 
 }
