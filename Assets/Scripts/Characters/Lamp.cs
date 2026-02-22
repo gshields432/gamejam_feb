@@ -7,12 +7,12 @@ public class Lamp : PhysicsObject
 {
     [Header ("Reference")]
     public EnemyBase enemyBase;
-    private CapsuleCollider2D capsuleCollider;
+    //private CapsuleCollider2D capsuleCollider;
     [SerializeField] private GameObject graphic;
 
     [Header ("Properties")]
     private Animator animator;
-    GameManager.GameStates prevState;
+    //GameManager.GameStates prevState;
     [SerializeField] private LayerMask layerMask; //What can the Walker actually touch?
     public enum EnemyType{ Bug, Zombie }; //Bugs will simply patrol. Zombie's will immediately start chasing you forever until you defeat them.
     [SerializeField] private EnemyType enemyType;
@@ -51,8 +51,8 @@ public class Lamp : PhysicsObject
     
     void Start()
     {
-        prevState = GameManager.GameStates.OpenEyes;
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        //prevState = GameManager.GameStates.OpenEyes;
+        //capsuleCollider = GetComponent<CapsuleCollider2D>();
         enemyBase = GetComponent<EnemyBase>();
         animator = GetComponent<Animator>();
         //capsuleCollider
