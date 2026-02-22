@@ -8,18 +8,20 @@ using UnityEngine;
 
 public class EnemyBase : MonoBehaviour
 {
-    [Header ("Reference")]
+    [Header("Reference")]
     [System.NonSerialized] public AudioSource audioSource;
     public Animator animator;
     private AnimatorFunctions animatorFunctions;
     [SerializeField] Instantiator instantiator;
     [System.NonSerialized] public RecoveryCounter recoveryCounter;
 
-    [Header ("Properties")]
+    [Header("Properties")]
     [SerializeField] private GameObject deathParticles;
     [SerializeField] private int health = 3;
     public AudioClip hitSound;
     public bool isBomb;
+    [SerializeField] private bool damagePlayerOnCollision = false;
+    [SerializeField] private int collisionHitPower = 1;
     [SerializeField] bool requirePoundAttack; //Requires the player to use the down attack to hurt
 
     void Start()
@@ -99,5 +101,22 @@ public class EnemyBase : MonoBehaviour
         instantiator.InstantiateObjects();
         Time.timeScale = 1f;
         Destroy(gameObject);
+    }
+
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!damagePlayerOnCollision)
+        {
+            return;
+        }
+
+        NewPlayer player = collision.collider.GetComponent<NewPlayer>();
+        if (player == null)
+        {
+            return;
+        }
+
+        int launchDirection = transform.position.x < player.transform.position.x ? 1 : -1;
+        player.GetHurt(launchDirection, collisionHitPower);
     }
 }
