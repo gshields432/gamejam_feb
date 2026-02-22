@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 [RequireComponent(typeof(NewPlayer))]
 public class Room1DeathRules : MonoBehaviour
@@ -18,6 +19,14 @@ public class Room1DeathRules : MonoBehaviour
     float lastDeathTime;
     [SerializeField] private TMP_Text blinkInstructions; // show when dying to Ground
     [SerializeField] private TMP_Text cloudWarning;      // show when dying to Cloud
+
+    [Header("Cloud Warning Animation")]
+
+    public float visibleDuration = 4f;
+    public float fadeDuration = 0.5f;
+    public float floatDistance = 10f;
+
+    Tween currentTween;
 
     void Awake()
     {
@@ -52,8 +61,7 @@ public class Room1DeathRules : MonoBehaviour
             // Closed eyes means death
             if (eyesClosed && cloudKillsWhenEyesClosed && IsFallingFastEnough())
             {
-                cloudWarning.gameObject.SetActive(true);
-                blinkInstructions.gameObject.SetActive(false);
+                PlayFloatingText(cloudWarning);
                 DieAndRespawn();
             }
             return;
@@ -66,8 +74,7 @@ public class Room1DeathRules : MonoBehaviour
             // Closed eyes is safe
             if (!eyesClosed && groundKillsWhenEyesOpen && IsFallingFastEnough())
             {
-                cloudWarning.gameObject.SetActive(false);
-                blinkInstructions.gameObject.SetActive(true);
+                PlayFloatingText(blinkInstructions);
                 DieAndRespawn();
             }
             return;
@@ -92,4 +99,55 @@ public class Room1DeathRules : MonoBehaviour
         if (player == null) return false;
         return player.maxDownSpeedThisAir <= -minFallSpeedToDie;
     }
+
+    void PlayFloatingText(TMP_Text text)
+{
+    if (text == null) return;
+
+    currentTween?.Kill();
+
+    text.gameObject.SetActive(true);
+
+    RectTransform rect = text.rectTransform;
+
+    // This is the position you set in the editor
+    Vector2 readablePos = rect.anchoredPosition;
+
+    // Start slightly below it
+    Vector2 startPos = readablePos - new Vector2(0, floatDistance * 0.5f);
+
+    rect.anchoredPosition = startPos;
+
+    // Start invisible
+    Color c = text.color;
+    c.a = 0f;
+    text.color = c;
+
+    float slowFloatDistance = floatDistance * 0.5f;
+
+    Sequence seq = DOTween.Sequence();
+
+    // -------- PHASE 1: Fade UP into readable position --------
+    seq.Append(text.DOFade(1f, fadeDuration));
+    seq.Join(rect.DOAnchorPos(readablePos, fadeDuration)
+        .SetEase(Ease.OutQuad));
+
+    // -------- PHASE 2: Slow float above readable position --------
+    seq.Append(rect.DOAnchorPosY(readablePos.y + slowFloatDistance, visibleDuration)
+        .SetEase(Ease.Linear));
+
+    // -------- PHASE 3: Faster float + fade out --------
+    seq.Append(text.DOFade(0f, fadeDuration));
+    seq.Join(rect.DOAnchorPosY(readablePos.y + floatDistance, fadeDuration)
+        .SetEase(Ease.InQuad));
+
+    seq.OnComplete(() =>
+    {
+        // Reset back below so it's ready next time
+        rect.anchoredPosition = readablePos;
+        text.gameObject.SetActive(false);
+    });
+
+    currentTween = seq;
+}
 }
