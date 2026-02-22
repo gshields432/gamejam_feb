@@ -34,7 +34,10 @@ public class NewPlayer : PhysicsObject
             return instance;
         }
     }
-
+    public CapsuleCollider2D GetCollider()
+    {
+        return capsuleCollider;
+    }
     [Header("Properties")]
     [SerializeField] private string[] cheatItems;
     public bool dead = false;

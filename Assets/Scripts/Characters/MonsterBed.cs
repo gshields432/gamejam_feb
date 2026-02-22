@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
 
-public class Lamp : PhysicsObject
+public class MonsterBed : PhysicsObject
 {
     [Header ("Reference")]
     public EnemyBase enemyBase;
-    private CapsuleCollider2D capsuleCollider;
     [SerializeField] private GameObject graphic;
 
     [Header ("Properties")]
@@ -52,7 +51,6 @@ public class Lamp : PhysicsObject
     void Start()
     {
         prevState = GameManager.GameStates.OpenEyes;
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
         enemyBase = GetComponent<EnemyBase>();
         animator = GetComponent<Animator>();
         //capsuleCollider
@@ -83,21 +81,21 @@ public class Lamp : PhysicsObject
         //BUG: when detransforming, the animation plays twice
         if (GameManager.Instance.GameState.Equals(GameManager.GameStates.OpenEyes)) {
             //prevState = GameManager.GameStates.OpenEyes;
-            animator.SetTrigger("transform");
-            animator.SetBool("isWalking",true);
+            animator.SetTrigger("Transform");
+            
             //Debug.Log("animator.IsInTransition(0): "+animator.IsInTransition(0));
-            attentionRange = 10000000000;
+            //attentionRange = 10000000000;
             
         }
         else
         {
-            animator.SetBool("isWalking", false);
+            //animator.SetBool("isWalking", false);
             //if(prevState.Equals(GameManager.GameStates.OpenEyes))
             //{
                
             //    prevState = GameManager.GameStates.ClosedEyes;
             //}
-            animator.SetTrigger("detransform");
+            animator.SetTrigger("Detransform");
         }
     
     }
@@ -151,7 +149,7 @@ public class Lamp : PhysicsObject
                     {
                         followPlayer = true;
                         sitStillMultiplier = 1;
-
+                        //animator.SetTrigger("Lick");
                         if (neverStopFollowing)
                         {
                             attentionRange = 10000000000;
@@ -250,7 +248,7 @@ public class Lamp : PhysicsObject
 
     public void Jump()
     {
-        // For diversity in movements, lets try lamps that can't jump - Grant
+
 
 
         //if (grounded)
