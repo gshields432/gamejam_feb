@@ -91,7 +91,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Strength: 25
-    - _Stretch: 0
+    - _Stretch: 1.7910347e-24
     - _Taps: 16
     - _TimeScale: 1.5
     - _UVSec: 0

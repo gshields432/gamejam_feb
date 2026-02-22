@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoLevel.unity
     guid: 53953173316aa0a43a3912f541d85d08
+  - enabled: 1
+    path: Assets/Scenes/Room1_Lucas.unity
+    guid: ed84d500656e2ab4d8e3bee796c7a761
+  - enabled: 1
+    path: Assets/Scenes/Room2.unity
+    guid: 2915df8995ad74f2c80919b7a5d31d66
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c499c607c09a996458ae3acdf2a460bc,
       type: 3}

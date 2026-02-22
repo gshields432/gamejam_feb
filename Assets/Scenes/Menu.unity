@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fa67dafa60a44f4afe0f404dcf5cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whichScene: CutScene1
+  whichScene: Room1_Lucas
 --- !u!1 &1428702186
 GameObject:
   m_ObjectHideFlags: 0

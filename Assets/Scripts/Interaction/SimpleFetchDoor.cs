@@ -33,7 +33,7 @@ public class SimpleFetchDoor : MonoBehaviour
             return;
         }
 
-        if (Input.GetButtonDown("Submit"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             TryOpen();
         }
@@ -62,7 +62,12 @@ public class SimpleFetchDoor : MonoBehaviour
         if (!HasRequiredItem())
         {
             PlayOneShot(lockedSound);
+            Debug.Log("You need a key");
             return;
+        }
+        else
+        {
+            Debug.Log("Unlocked");
         }
 
         _opened = true;
