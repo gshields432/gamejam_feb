@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5102151465672480320}
   - component: {fileID: -5469589922668126525}
   - component: {fileID: 461125313760364878}
+  - component: {fileID: 4098211589569231067}
   m_Layer: 0
   m_Name: ENEMY-TEDDY
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f76df804f07458b8dd06edeba7002d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBase
-  animator: {fileID: 0}
+  animator: {fileID: 6093063823719895620}
   instantiator: {fileID: 0}
   deathParticles: {fileID: 0}
   health: 3
@@ -215,3 +216,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.0000002, y: 3.00293}
   m_Direction: 0
+--- !u!114 &4098211589569231067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2199102491370102208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d60daf6e9c55f74d8f3026b2162f542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::teddy
